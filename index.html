@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="shortcut icon" href="#" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <title>Pomodoro Timer</title>
+  </head>
+  <body>
+    <div class="pomodoro">
+      <h1>
+        <a
+          href="https://en.wikipedia.org/wiki/Pomodoro_Technique"
+          target="_blank"
+          >Pomodoro Timer</a
+        >
+      </h1>
+      <div class="input-container">
+        <div id="break-label">
+          <p>Break Length</p>
+          <div class="break">
+            <button id="break-increment">
+              <i class="fas fa-angle-double-up"></i>
+            </button>
+            <p id="break-length"></p>
+            <button id="break-decrement">
+              <i class="fas fa-angle-double-down"></i>
+            </button>
+          </div>
+        </div>
+        <div id="session-label">
+          <p>Focus Length</p>
+          <div class="focus">
+            <button id="session-increment">
+              <i class="fas fa-angle-double-up"></i>
+            </button>
+            <p id="session-length"></p>
+            <button id="session-decrement">
+              <i class="fas fa-angle-double-down"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="display">
+        <p id="timer-label"></p>
+        <p id="time-left"></p>
+      </div>
+      <div>
+        <button id="start_stop">
+          <i class="fas fa-play-circle"></i>
+          <i class="fas fa-pause-circle"></i>
+        </button>
+        <button id="reset"><i class="fas fa-sync"></i></button>
+      </div>
+    </div>
+    <div class="credits">
+      <p>
+        Coded and Designed by
+        <a href="https://codepen.io/Digital_M" target="_blank">Menno</a>
+      </p>
+    </div>
+    <audio
+      id="beep"
+      preload="auto"
+      src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/audio/BeepSound.wav"
+    />
+    <!-- import redux -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.5/redux.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/redux-thunk/2.3.0/redux-thunk.min.js"></script> -->
+    <!-- import js -->
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+body {
+  color: white;
+  background: content-box radial-gradient(rgb(161, 241, 255), rgb(24, 108, 122));
+  text-align: center;
+  font-size: large;
+  letter-spacing: 5px;
+}
+
+button {
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: larger;
+  outline: none;
+  background-color: rgb(179, 235, 245);
+}
+
+button:hover {
+  background-color: rgb(209, 248, 255);
+}
+
+.pomodoro {
+  min-width: 250px;
+  border-radius: 40px;
+  padding: 20px;
+  background-color: rgb(49, 49, 49);
+  box-shadow: 0 0 20px rgb(49, 49, 49);
+}
+
+.input-container {
+  max-width: 400px;
+  margin: auto;
+}
+
+.break,
+.focus {
+  display: flex;
+  justify-content: space-around;
+  max-width: 200px;
+  margin: auto;
+}
+
+#break-length,
+#session-length {
+  font-weight: bolder;
+}
+
+.display {
+  border: 4px solid rgb(179, 235, 245);
+  border-radius: 40px;
+  margin: 30px auto;
+  max-width: 400px;
+  font-weight: bolder;
+}
+
+#time-left {
+  font-size: x-large;
+}
+
+.credits {
+  letter-spacing: 3px;
+}
+
+a {
+  color: wheat;
+  text-decoration: none;
+}
+a:hover {
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+@media (min-width: 410px) {
+  .pomodoro {
+    margin: 5vh 10vw;
+  }
+}
+
+@media (min-width: 570px) {
+  .pomodoro {
+    margin: 17vh 10vw;
+  }
+  .input-container {
+    display: flex;
+    justify-content: space-around;
+  }
+}
